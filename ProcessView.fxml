@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @author Sunny Kamleshbhai Shah -->
+<!-- Student ID: 1001358145 -->
+<!-- Login ID: sks8145 -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="172.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="428.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #707070;">
+         <children>
+            <Button fx:id="connectHost" alignment="CENTER" layoutX="35.0" layoutY="92.0" mnemonicParsing="false" onAction="#connectHostListener" prefHeight="50.0" prefWidth="100.0" text="Connect to Host" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="37.0" />
+            <Button fx:id="disconnectHost" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="154.0" mnemonicParsing="false" onAction="#disconnectHostListener" prefHeight="50.0" prefWidth="100.0" text="Disconnect from Host" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0" />
+            <Button fx:id="quit" alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="332.0" mnemonicParsing="false" onAction="#quitListener" prefHeight="50.0" prefWidth="100.0" text="Quit" textAlignment="CENTER" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0" />
+            <TextField fx:id="enterNodeId" layoutX="36.0" layoutY="24.0" prefHeight="50.0" prefWidth="110.0" promptText="Enter Node" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <children>
+            <Label fx:id="nodeHeader" alignment="CENTER" layoutX="179.0" layoutY="36.0" prefHeight="16.0" prefWidth="24.0" style="-fx-text-fill: white; -fx-background-color: #b3b3b3;" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets bottom="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="nodeOutput" editable="false" layoutX="10.0" layoutY="69.0" prefHeight="315.0" prefWidth="408.0" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+         </children></AnchorPane>
+   </children>
+</GridPane>
